@@ -148,6 +148,7 @@ class Shortener(http.server.BaseHTTPRequestHandler):
 
 class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
     "This is an HTTPServer that supports thread-based concurrency."
+    pass
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8000))
